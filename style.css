@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: radial-gradient(#019C63, transparent);
+    height: 100vh;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-auto-rows: minmax(320px, auto);
+    gap: 2rem;
+    grid-template-areas: 
+    'one one two'
+    'three four two'
+    'five five six';
+}
+
+.container *{
+    background-size: cover;
+}
+
+.pic1{
+    background-image: url('img/pic1.jpg');
+    grid-area: one;
+}
+
+.pic2{
+    background-image: url('img/pic2.jpg');
+    grid-area: two;
+}
+
+.pic3{
+    background-image: url('img/pic3.jpg');
+    grid-area: three;
+}
+
+.pic4{
+    background-image: url('img/pic4.jpg');
+    grid-area: four;
+}
+
+.pic5{
+    background-image: url('img/pic5.jpg');
+    grid-area: five;
+}
+
+.pic6{
+    background-image: url('img/pic6.jpg');
+    grid-area: six;
+}
